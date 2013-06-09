@@ -1,1 +1,1 @@
-D:\Python27\python.exe run_p2pool.py --net realcoin -a RYZfywANBkdM2kTDVpAx4rKP3oZdiftGNj -f 1 -a RYZfywANBkdM2kTDVpAx4rKP3oZdiftGNj --max-conns 256 
+D:\Python27\python.exe run_p2pool.py --net realcoin -a RYZfywANBkdM2kTDVpAx4rKP3oZdiftGNj -f 1 -a RYZfywANBkdM2kTDVpAx4rKP3oZdiftGNj --max-conns 256 --bitcoind-p2p-port 20011 --bitcoind-rpc-port 20012

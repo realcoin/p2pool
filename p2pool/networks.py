@@ -120,8 +120,8 @@ nets = dict(
     ),
 	realcoin=math.Object(
         PARENT=networks.nets['realcoin'],
-        SHARE_PERIOD=10, # seconds
-        CHAIN_LENGTH=60*60//10, # shares
+        SHARE_PERIOD=30, # seconds
+        CHAIN_LENGTH=24*60*60//10, # shares
         REAL_CHAIN_LENGTH=60*60//10, # shares
         TARGET_LOOKBEHIND=200, # shares
         SPREAD=120, # blocks

@@ -174,7 +174,7 @@ nets = dict(
         )),
         SUBSIDY_FUNC=lambda height: 200*100000000 >> (height + 1)//4730400,
         POW_FUNC=lambda data: pack.IntType(256).unpack(__import__('ltc_scrypt').getPoWHash(data)),
-        BLOCK_PERIOD=150, # s
+        BLOCK_PERIOD=30, # s
         SYMBOL='REC',
         CONF_FILE_FUNC=lambda: os.path.join(os.path.join(os.environ['APPDATA'], 'realcoin') if platform.system() == 'Windows' else os.path.expanduser('~/Library/Application Support/realcoin/') if platform.system() == 'Darwin' else os.path.expanduser('~/.realcoin'), 'realcoin.conf'),
         BLOCK_EXPLORER_URL_PREFIX='http://realcoin.org/block/',

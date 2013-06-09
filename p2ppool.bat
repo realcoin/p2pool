@@ -1,1 +1,1 @@
-D:\Python27\python.exe run_p2pool.py --net realcoin --give-author 0  -a RYZfywANBkdM2kTDVpAx4rKP3oZdiftGNj --bitcoind-p2p-port 20001 --bitcoind-rpc-port 20002  user password
+D:\Python27\python.exe run_p2pool.py --net realcoin -a RYZfywANBkdM2kTDVpAx4rKP3oZdiftGNj -f 1 -a RYZfywANBkdM2kTDVpAx4rKP3oZdiftGNj --max-conns 256 

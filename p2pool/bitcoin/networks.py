@@ -165,7 +165,7 @@ nets = dict(
 	
 	realcoin=math.Object(
         P2P_PREFIX='fbc0b6db'.decode('hex'),
-        P2P_PORT=20011,
+        P2P_PORT=20001,
         ADDRESS_VERSION=60,
         RPC_PORT=20002,
         RPC_CHECK=defer.inlineCallbacks(lambda bitcoind: defer.returnValue(

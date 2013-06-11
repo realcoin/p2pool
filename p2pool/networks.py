@@ -120,23 +120,23 @@ nets = dict(
     ),
 	realcoin=math.Object(
         PARENT=networks.nets['realcoin'],
-        SHARE_PERIOD=30, # seconds
-        CHAIN_LENGTH=24*60*60//10, # shares
-        REAL_CHAIN_LENGTH=60*60//10, # shares
-        TARGET_LOOKBEHIND=200, # shares
-        SPREAD=60, # blocks
-        IDENTIFIER='e037d5b8c6923410'.decode('hex'),
-        PREFIX='7208c1a53ef629b0'.decode('hex'),
-        P2P_PORT=20011,
+        SHARE_PERIOD=15,
+        CHAIN_LENGTH=24*60*60//10,
+        REAL_CHAIN_LENGTH=24*60*60//10,
+        TARGET_LOOKBEHIND=200,
+        SPREAD=30,
+        IDENTIFIER='e021a7b8c60244af'.decode('hex'),
+        PREFIX='b6c0601991aa12a2'.decode('hex'),
+        P2P_PORT=18889,
         MIN_TARGET=0,
         MAX_TARGET=2**256//2**20 - 1,
         PERSIST=False,
-        WORKER_PORT=20012,
-        #BOOTSTRAP_ADDRS='199.119.207.66 198.211.17.160'.split(' '),
-		BOOTSTRAP_ADDRS=''.split(' '),
+        WORKER_PORT=18888,
+        BOOTSTRAP_ADDRS='',
         ANNOUNCE_CHANNEL='#p2pool-alt',
         VERSION_CHECK=lambda v: True,
     ),
+
     realcoin_testnet=math.Object(
         PARENT=networks.nets['litecoin_testnet'],
         SHARE_PERIOD=3, # seconds
